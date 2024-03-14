@@ -1,0 +1,13 @@
+name: CI
+
+on:  //  where to run the pipeline
+  push:
+    branchers:("main")
+  pull_request:
+    branchers: ("main")
+
+  workflow_dispatch:
+
+jobs: 
+  build:
+  runs-on: 
